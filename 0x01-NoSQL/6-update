@@ -1,6 +1,7 @@
 // script that adds a new attribute to a document in the collection school
 db.school.update(
-   { "name" : "Holberton school" },               // Filter criteria (similar to WHERE in SQL)
-   { $set: { "address" : "972 Mission street" } } // Update operation (similar to SET in SQL)
+   { "name" : "Holberton school" },            
+   { $set: { "address" : "972 Mission street" } },
+   {multi:true}
 )
 
